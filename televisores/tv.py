@@ -33,7 +33,7 @@ class TV:
     def getCanal(self):
         return self._canal
     def setCanal(self, canal):
-        if (canal>=1) and (canal<=120):
+        if (canal>=1) and (canal<=120) and (self._estado):
             self._canal= canal
     
     @classmethod
